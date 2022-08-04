@@ -625,6 +625,23 @@
 }
 
 
+.footer{
+  padding: 30px;
+  background-color: $bg-gray;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-img{
+      width: 50%;
+  }
+
+  &__copy{
+    text-align: end;
+  }
+}
 
 
 @import "media"
