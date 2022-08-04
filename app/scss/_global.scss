@@ -16,7 +16,7 @@ body {
 }
 
 section {
-  padding-top:70px
+  padding:75px
 }
 
 .main {
@@ -35,6 +35,30 @@ section {
   margin: 0 auto;
 }
 
+.subtitle{
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+  &::before{
+    content:"";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 2px;
+    height: 40px;
+    background-color: $default;
+  }
+  &::after{
+    content:"";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: $default;
+  }
+}
+
 .title-box {
   position: relative;
   display: block;
@@ -44,7 +68,7 @@ section {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
-  &__text {
+  &__title {
     display: inline-block;
     position: absolute;
     right: 0;
@@ -53,8 +77,14 @@ section {
     font-size: 40px;
     font-weight: 600;
     color: $accent;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   
+  }
+
+  &__text{
+    position: absolute;
+    bottom: -15px;
+
   }
 
   &__img{
