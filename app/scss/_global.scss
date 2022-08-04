@@ -11,6 +11,12 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: $default;
+  background-color: $bg;
+  text-shadow: 0 0 5px $bg;
+}
+
+section {
+  padding: 70px 0;
 }
 
 .main {
@@ -22,8 +28,37 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .container {
   max-width: 1300px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.title-box {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  min-height: 212px;
+  text-transform: uppercase;
+  text-align: center;
+  &__text {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 86px;
+    font-size: 40px;
+    font-weight: 600;
+    color: $accent;
+    margin-bottom: 40px;
+  
+  }
+
+  &__img{
+
+    margin: 0 auto;
+    opacity: .1;
+  }
 }
