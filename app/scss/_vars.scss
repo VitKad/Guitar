@@ -31,6 +31,7 @@ $border: #fff9;
   background-color: $bg-btn;
   transition: all .3s;
   text-shadow: none;
+  cursor: pointer;
   &:hover{
     box-shadow: 0 0 0 3px #fff;
   }

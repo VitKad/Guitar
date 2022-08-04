@@ -4,15 +4,15 @@
 @import "reset";
 @import "global";
 
-.header{
+.header {
   background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
   min-height: 100vh;
   height: 100%;
-  
-  &__content{
+
+  &__content {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -22,42 +22,42 @@
     max-width: 630px;
     width: 100%;
     min-height: calc(100vh - 125px);
-/*     transform: translateY(50%); */
+    /*     transform: translateY(50%); */
     color: $accent;
-    
+
   }
 
-  &__title{
+  &__title {
     font-weight: 600;
     font-size: 50px;
     line-height: 36px;
     margin-top: 20%;
     margin-bottom: 50px;
-   
+
   }
 
-  &__text{
+  &__text {
     max-width: 530px;
     width: 100%;
     margin-bottom: 60px;
-   
+
   }
 
-  &__btn{
+  &__btn {
     @extend %btn;
     background-color: transparent;
     margin-bottom: auto;
     text-shadow: 0 0 5px $bg;
   }
 
-  &__social{
+  &__social {
     margin-bottom: 40px;
-   /*  margin-top: auto; */
+    /*  margin-top: auto; */
   }
 }
 
 
-.header-top{
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,59 +65,64 @@
 
 }
 
-.menu{
-  &__list{
+.menu {
+  &__list {
     display: flex;
     font-size: 18px;
     color: $accent;
   }
 
-  &__item{
-    & + .menu__item{
+  &__item {
+    &+.menu__item {
       margin-left: 20px;
     }
   }
-  &__link{
+
+  &__link {
     display: inline-block;
     font-size: 20px;
     transition: all .3s;
-    &:hover{
+
+    &:hover {
       color: $hover;
     }
   }
 }
 
-.social{
+.social {
   display: flex;
   justify-content: center;
-  &__item{
-    & + .social__item{
+
+  &__item {
+    &+.social__item {
       margin-left: 15px;
     }
   }
-  &__link{
-    path{
+
+  &__link {
+    path {
       fill: $accent;
       transition: all .3s;
     }
-    &:hover{
-      path{
+
+    &:hover {
+      path {
         fill: $hover;
       }
     }
   }
 }
 
-.about{
+.about {
 
 
-  &__inner{
+  &__inner {
     display: flex;
     justify-content: space-between;
 
   }
 
-  &__img-box{
+  &__img-box {
     padding: 20px;
     border: 1px solid $border;
     max-width: 400px;
@@ -125,24 +130,25 @@
     height: 100%;
   }
 
-  &__img{
+  &__img {
     max-width: 400px;
     width: 100%;
     object-fit: cover;
   }
 
-  &__content{
+  &__content {
     max-width: 630px;
     padding: 40px 30px;
 
   }
 
-  &__content-subtitle{
+  &__content-subtitle {
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 20px;
   }
-  &__content-title{
+
+  &__content-title {
     font-size: 20px;
     font-weight: 600;
     color: $accent;
@@ -150,28 +156,30 @@
     margin-bottom: 20px;
   }
 
-  &__content-text{
+  &__content-text {
     margin-bottom: 50px;
   }
 
-  &__content-btn{
+  &__content-btn {
     @extend %btn;
     margin: 0 auto;
   }
 }
 
-.video{
+.video {
   padding-bottom: 0;
-  &__title{
+
+  &__title {
     margin-bottom: 100px;
   }
-  &__items{
+
+  &__items {
     display: flex;
     justify-content: space-between;
-   
+
   }
 
-  &__item{
+  &__item {
     max-width: 350px;
     width: 100%;
     padding-bottom: 60px;
@@ -179,19 +187,19 @@
     border-bottom: none;
   }
 
-  &__img-box{
+  &__img-box {
     position: relative;
 
   }
 
-  &__img{
-    max-width: 350px; 
+  &__img {
+    max-width: 350px;
     width: 100%;
     height: 230px;
     object-fit: cover;
   }
 
-  &__play{
+  &__play {
     display: inline-block;
     position: absolute;
     right: 0;
@@ -200,34 +208,38 @@
     transform: translateY(-50%);
     width: 90px;
     height: 90px;
-    &--second{
+
+    &--second {
       left: 0;
       right: 0;
       margin: 0 auto;
     }
-    &--third{
+
+    &--third {
       left: auto;
       right: 30px;
       margin: 0 auto;
     }
-    path{
+
+    path {
       transition: all .3s;
       fill: $accent;
-      filter: drop-shadow( 0 0 5px rgba(0, 0, 0, .7));
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, .7));
     }
-    &:hover{
-      path{  
+
+    &:hover {
+      path {
         fill: $hover;
       }
     }
   }
 
-  &__info{
+  &__info {
     padding: 20px;
     text-align: center;
   }
 
-  &__item-title{
+  &__item-title {
     font-size: 18px;
     margin-bottom: 15px;
     color: $accent;
@@ -235,37 +247,37 @@
 }
 
 
-.soloist{
+.soloist {
   background-color: $bg-gray;
 
-  &__inner{
+  &__inner {
     display: flex;
     justify-content: space-between;
   }
 
-  &__img-box{
+  &__img-box {
     padding: 50px;
-    border:9px solid $border;
+    border: 9px solid $border;
   }
 
-  &__img{
+  &__img {
     max-width: 450px;
     width: 100%;
   }
 
-  &__content{
+  &__content {
     padding-top: 20px;
     max-width: 530px;
     width: 100%;
   }
 
-  &__subtitle{
+  &__subtitle {
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 25px;
   }
 
-  &__name{
+  &__name {
     font-weight: 700;
     color: $accent;
     font-size: 26px;
@@ -273,43 +285,44 @@
     margin-bottom: 5px;
   }
 
-  &__position{
+  &__position {
     color: $accent;
     margin-bottom: 20px;
   }
 
-  &__text{
+  &__text {
     margin-bottom: 20px;
   }
 
-  &__social{
+  &__social {
     display: flex;
     align-items: center;
   }
 
-  &__social-title{
+  &__social-title {
     margin-right: 30px;
     font-size: 18px;
     color: $accent;
   }
 
-  &__social-items{
+  &__social-items {
     line-height: 0;
-   /*  vertical-align: middle; */
+    /*  vertical-align: middle; */
   }
 }
 
-.services{
-  &__title{
+.services {
+  &__title {
     margin-bottom: 100px;
   }
-  &__items{
+
+  &__items {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
   }
 
-  &__item{
+  &__item {
     padding: 25px;
     padding-bottom: 10px;
     border: 1px solid $accent;
@@ -318,36 +331,40 @@
     max-width: 350px;
     width: 100%;
     text-align: center;
-    &:nth-child(2){
+
+    &:nth-child(2) {
       border: 1px solid $accent;
       border-bottom: none;
-      .services__img-box{
+
+      .services__img-box {
         border: 1px solid $accent;
         border-top: none;
       }
     }
-    &:nth-child(3){
+
+    &:nth-child(3) {
       border: 1px solid $accent;
       border-left: none;
-      .services__img-box{
+
+      .services__img-box {
         border: 1px solid $accent;
         border-right: none;
       }
     }
-   
+
   }
 
-  &__img-box{
+  &__img-box {
     max-width: 350px;
     width: 100%;
     padding: 25px;
     border: 1px solid $accent;
     border-left: none;
     margin-bottom: 5px;
-    
+
   }
 
-  &__img{
+  &__img {
     max-width: 250px;
     width: 100%;
     height: 250px;
@@ -355,92 +372,94 @@
     object-fit: contain;
   }
 
-  &__text{
+  &__text {
     font-size: 20px;
-    color: $accent; 
+    color: $accent;
   }
 
-  &__btn{
+  &__btn {
     @extend %btn;
     margin: 0 auto;
   }
 }
 
-.team{
-  &__title{
+.team {
+  &__title {
     margin-bottom: 100px;
   }
-  
-  &__items{
+
+  &__items {
     display: flex;
     justify-content: space-between;
   }
 
-  &__item{
+  &__item {
     max-width: 330px;
     width: 100%;
 
-    & + .team__item{
+    &+.team__item {
       margin-left: 30px;
     }
   }
 
-  &__img{
+  &__img {
     max-width: 330px;
     width: 100%;
     height: 330px;
     object-fit: cover;
   }
 
-  &__box{
+  &__box {
     padding: 20px 20px 40px;
     border: 1px solid $border;
     border-top: none;
     text-align: center;
   }
 
-  &__name{
+  &__name {
     color: $accent;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 5px;
   }
 
-  &__position{
+  &__position {
     font-weight: 500;
     font-size: 18px;
   }
 }
 
-.albums{
+.albums {
   background-color: $bg-gray;
-  &__title{
+
+  &__title {
     margin-bottom: 100px;
   }
 
-  &__items{
+  &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 30px;
   }
 
- 
-  &__item{
-    &:nth-child(1){
+
+  &__item {
+    &:nth-child(2) {
       grid-column: 2 span;
       grid-row: 2 span;
     }
   }
 
-  &__img{
+  &__img {
     width: 100%;
   }
 
-  &__link{
+  &__link {
     position: relative;
-    &::before{
-      content:"";
+
+    &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -450,22 +469,24 @@
       opacity: 0;
       transition: all .3s;
     }
-    &:hover{
-      .albums__link-text{
+
+    &:hover {
+      .albums__link-text {
         opacity: 0.8;
       }
-      &::before{
+
+      &::before {
         opacity: 0.2;
       }
     }
   }
 
-  &__link-text{
+  &__link-text {
     text-transform: uppercase;
     position: absolute;
     display: inline-block;
     left: 50%;
-    top:85%;
+    top: 85%;
     transform: translate(-50%, -50%);
     font-size: 18px;
     border: 1px solid $accent;
@@ -474,12 +495,136 @@
     color: $accent;
     opacity: 0;
     transition: opacity .4s;
-    &:hover{
+
+    &:hover {
       border: 3px solid $accent;
     }
   }
 
 
 }
+
+
+.contacts {
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 100px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {}
+
+  &__img-box {
+    padding: 10px;
+
+
+    border-left: none;
+    position: relative;
+
+  }
+
+  &__img {
+    max-width: 290px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__text-box {
+    margin-top: 15px;
+    min-height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      z-index: 2;
+    }
+
+    &::after {
+      background-color: $bg-gray;
+      z-index: 1;
+    }
+  }
+
+  &__img-box,
+  &__text-box {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 1000px;
+      height: 100%;
+    }
+
+    &--left::after {
+      right: 0;
+      border: 1px solid $border;
+    }
+
+    &--right::after {
+      left: 0;
+      border: 1px solid $border;
+    }
+  }
+
+  &__item-title {
+    font-size: 18px;
+    color: $accent;
+  }
+
+  &__item-text {
+    max-width: 200px;
+  }
+
+  &__form {
+/*     margin-top: 40px; */
+    max-width: 630px;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  &__form-input,
+  &__form-textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: $bg-gray;
+    font-size: 18px;
+    border:1px solid $border;
+    border-top:none;
+    padding: 20px;
+    color: $accent;
+    &::placeholder{
+      text-align: center;
+    }
+  }
+
+  &__form-input {
+    height: 50px;
+  }
+  &__form-textarea {
+    min-height: 200px;
+    resize: none;
+  }
+
+  &__form-btn{
+    @extend %btn;
+    width: 100%;
+    background-color: $bg;
+  }
+
+}
+
+
+
 
 @import "media"
