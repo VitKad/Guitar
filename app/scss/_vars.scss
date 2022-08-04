@@ -1,10 +1,9 @@
-$accent: #fe3e57;
-$title: #29282d;
-$default: #8d8d8d;
-$bg: #f6f6f6;
-$border: #ececec;
+$accent: #fff;
+$default-text: #666666;
+$bg: #000000;
+$bg-gray: #1a1a1a;
 
-%sfp-400 {
+/* %sfp-400 {
   font-family: 'SFProDisplay-Regular', sans-serif;
   font-weight: 400;
 }
@@ -23,17 +22,17 @@ $border: #ececec;
   font-family: 'SFProDisplay-Bold', sans-serif;
   font-weight: 700;
 } 
+ */
 
 
-
-%checkbox-reset{
+/* %checkbox-reset{
   width: 1px;
   height: 1px;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
   position: absolute;
  }
-
+ */
  
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
