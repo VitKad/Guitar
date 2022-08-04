@@ -4,6 +4,108 @@
 @import "reset";
 @import "global";
 
+.header{
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  min-height: 100vh;
+  height: 100%;
+  text-shadow: 0 0 5px $bg;
+  &__content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 630px;
+    width: 100%;
+    min-height: calc(100vh - 125px);
+/*     transform: translateY(50%); */
+    color: $accent;
+    
+  }
 
+  &__title{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 36px;
+    margin-top: 20%;
+    margin-bottom: 50px;
+   
+  }
+
+  &__text{
+    max-width: 530px;
+    width: 100%;
+    margin-bottom: 60px;
+   
+  }
+
+  &__btn{
+    @extend %btn;
+    background-color: transparent;
+    margin-bottom: auto;
+    text-shadow: 0 0 5px $bg;
+  }
+
+  &__social{
+    margin-bottom: 40px;
+   /*  margin-top: auto; */
+  }
+}
+
+
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+}
+
+.menu{
+  &__list{
+    display: flex;
+    font-size: 18px;
+    color: $accent;
+  }
+
+  &__item{
+    & + .menu__item{
+      margin-left: 20px;
+    }
+  }
+  &__link{
+    display: inline-block;
+    font-size: 20px;
+    transition: all .3s;
+    &:hover{
+      color: $hover;
+    }
+  }
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  &__item{
+    & + .social__item{
+      margin-left: 15px;
+    }
+  }
+  &__link{
+    path{
+      fill: $accent;
+      transition: all .3s;
+    }
+    &:hover{
+      path{
+        fill: $hover;
+      }
+    }
+  }
+}
 
 @import "media"

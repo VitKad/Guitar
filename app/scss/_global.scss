@@ -7,14 +7,23 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'EB Garamond', serif;
-  font-style: 14px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
+  color: $default;
 }
 
 .main {
   flex-grow: 1;
 }
 
+.container-wide {
+  max-width: 1530px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .container {
+  max-width: 1300px;
+  padding: 0 15px;
   margin: 0 auto;
 }
