@@ -12,38 +12,42 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body id="body">
 
   <header class="header">
     <div class="container-wide">
 
       <div class="header-top">
 
-        <a class="logo" href="#">
+        <a class="logo" href="#body">
           <img class="logo-img" src="img/logo.png" alt="logo img">
         </a>
-        <div class="menu">
+        <div class="menu animate__animated">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">О нас</a>
+              <a class="menu__link" href="#about">О нас</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Выступления</a>
+              <a class="menu__link" href="#video">Выступления</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Услуги</a>
+              <a class="menu__link" href="#services">Услуги</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Команда</a>
+              <a class="menu__link" href="#team">Команда</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Альбомы</a>
+              <a class="menu__link" href="#albums">Концерты</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Контакты</a>
+              <a class="menu__link" href="#contacts">Контакты</a>
             </li>
           </ul>
+         
         </div>
+        <a class="header-top__bars-btn" href="#" >
+          <img class="header-top__bars-img" src="img/bars.svg" alt="bars">
+        </a>
       </div>
 
       <div class="header__content">
@@ -57,7 +61,7 @@
         <ul class="header__social social">
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px"
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
                 height="18px" viewBox="0 0 11 17" version="1.1">
                 <path
                   d="M 9.59375 9.5625 L 10.085938 6.484375 L 7.027344 6.484375 L 7.027344 4.488281 C 7.027344 3.648438 7.453125 2.828125 8.824219 2.828125 L 10.214844 2.828125 L 10.214844 0.207031 C 10.214844 0.207031 8.953125 0 7.746094 0 C 5.230469 0 3.585938 1.472656 3.585938 4.140625 L 3.585938 6.484375 L 0.785156 6.484375 L 0.785156 9.5625 L 3.585938 9.5625 L 3.585938 17 L 7.027344 17 L 7.027344 9.5625 Z M 9.59375 9.5625 " />
@@ -67,7 +71,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px"
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
                 height="18px" viewBox="0 0 17 17" version="1.1">
                 <path
                   d="M 17 8.691406 C 17 13.390625 13.625 16.734375 8.640625 16.734375 C 3.859375 16.734375 0 13.054688 0 8.5 C 0 3.945312 3.859375 0.265625 8.640625 0.265625 C 10.964844 0.265625 12.925781 1.078125 14.433594 2.421875 L 12.082031 4.574219 C 9.003906 1.746094 3.285156 3.871094 3.285156 8.5 C 3.285156 11.371094 5.691406 13.699219 8.640625 13.699219 C 12.058594 13.699219 13.34375 11.363281 13.542969 10.148438 L 8.640625 10.148438 L 8.640625 7.316406 L 16.863281 7.316406 C 16.945312 7.738281 17 8.144531 17 8.691406 Z M 17 8.691406 " />
@@ -77,7 +81,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px"
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
                 height="18px" viewBox="0 0 16 18" version="1.1">
                 <path
                   d="M 3.582031 15.75 L 0.265625 15.75 L 0.265625 5.234375 L 3.582031 5.234375 Z M 1.921875 3.800781 C 0.859375 3.800781 0 2.9375 0 1.890625 C 0 0.847656 0.859375 0 1.921875 0 C 2.980469 0 3.84375 0.847656 3.84375 1.890625 C 3.84375 2.9375 2.980469 3.800781 1.921875 3.800781 Z M 15.996094 15.75 L 12.6875 15.75 L 12.6875 10.632812 C 12.6875 9.410156 12.660156 7.847656 10.960938 7.847656 C 9.238281 7.847656 8.972656 9.171875 8.972656 10.542969 L 8.972656 15.75 L 5.660156 15.75 L 5.660156 5.234375 L 8.839844 5.234375 L 8.839844 6.667969 L 8.886719 6.667969 C 9.328125 5.84375 10.410156 4.972656 12.027344 4.972656 C 15.382812 4.972656 16 7.148438 16 9.972656 L 16 15.75 Z M 15.996094 15.75 " />
@@ -87,7 +91,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px"
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
                 height="18px" viewBox="0 0 18 18" version="1.1">
                 <path
                   d="M 16.148438 5.332031 C 16.160156 5.492188 16.160156 5.652344 16.160156 5.8125 C 16.160156 10.691406 12.449219 16.308594 5.664062 16.308594 C 3.574219 16.308594 1.632812 15.703125 0 14.652344 C 0.296875 14.6875 0.582031 14.699219 0.890625 14.699219 C 2.617188 14.699219 4.203125 14.117188 5.472656 13.125 C 3.847656 13.089844 2.488281 12.027344 2.023438 10.566406 C 2.25 10.597656 2.476562 10.621094 2.71875 10.621094 C 3.050781 10.621094 3.378906 10.574219 3.6875 10.496094 C 2 10.152344 0.730469 8.667969 0.730469 6.875 L 0.730469 6.828125 C 1.222656 7.105469 1.792969 7.277344 2.398438 7.296875 C 1.40625 6.636719 0.753906 5.503906 0.753906 4.226562 C 0.753906 3.539062 0.9375 2.914062 1.257812 2.363281 C 3.074219 4.601562 5.800781 6.066406 8.863281 6.226562 C 8.804688 5.949219 8.773438 5.664062 8.773438 5.378906 C 8.773438 3.347656 10.417969 1.691406 12.460938 1.691406 C 13.523438 1.691406 14.480469 2.136719 15.15625 2.855469 C 15.988281 2.695312 16.789062 2.386719 17.496094 1.964844 C 17.222656 2.820312 16.640625 3.539062 15.875 3.996094 C 16.617188 3.917969 17.335938 3.710938 18 3.425781 C 17.496094 4.15625 16.871094 4.808594 16.148438 5.332031 Z M 16.148438 5.332031 " />
@@ -103,7 +107,7 @@
 
   <main class="main">
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container-wide">
         <div class="about__title title-box">
           <img class="title-box__img" src="img/title-bg.png" alt="title img">
@@ -132,7 +136,7 @@
       </div>
     </section>
 
-    <section class="video">
+    <section class="video" id="video">
       <div class="container">
         <div class="video__title title-box">
           <img class="title-box__img" src="img/title-bg.png" alt="title img">
@@ -159,7 +163,9 @@
             <div class="video__info">
               <h5 class="video__item-title">Концерт в клубе 1</h5>
               <p class="video__item-text">
-                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. По всей ipsum диких все, своего ему текстов рот, сих повстречался рукопись залетают она моей предложения, проектах власти запятой переписывается возвращайся?
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. По всей ipsum диких
+                все, своего ему текстов рот, сих повстречался рукопись залетают она моей предложения, проектах власти
+                запятой переписывается возвращайся?
               </p>
             </div>
           </div>
@@ -168,7 +174,8 @@
           <div class="video__item">
             <div class="video__img-box">
               <img class="video__img" src="img/video-bg-2.jpg" alt="video img">
-              <a class="video__play video__play--second" data-fancybox="video-gallery" href="https://youtu.be/DLzxrzFCyOs">
+              <a class="video__play video__play--second" data-fancybox="video-gallery"
+                href="https://youtu.be/DLzxrzFCyOs">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90px"
                   height="90px" viewBox="0 0 90 90" version="1.1">
                   <g id="surface1">
@@ -184,7 +191,9 @@
             <div class="video__info">
               <h5 class="video__item-title">Концерт в клубе 2</h5>
               <p class="video__item-text">
-                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. По всей ipsum диких все, своего ему текстов рот, сих повстречался рукопись залетают она моей предложения, проектах власти запятой переписывается возвращайся?
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. По всей ipsum диких
+                все, своего ему текстов рот, сих повстречался рукопись залетают она моей предложения, проектах власти
+                запятой переписывается возвращайся?
               </p>
             </div>
           </div>
@@ -193,7 +202,8 @@
           <div class="video__item">
             <div class="video__img-box">
               <img class="video__img" src="img/video-bg-3.jpg" alt="video img">
-              <a class="video__play video__play--third" data-fancybox="video-gallery" href="https://youtu.be/DLzxrzFCyOs">
+              <a class="video__play video__play--third" data-fancybox="video-gallery"
+                href="https://youtu.be/DLzxrzFCyOs">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90px"
                   height="90px" viewBox="0 0 90 90" version="1.1">
                   <g id="surface1">
@@ -209,7 +219,9 @@
             <div class="video__info">
               <h5 class="video__item-title">Концерт в клубе 3</h5>
               <p class="video__item-text">
-                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. По всей ipsum диких все, своего ему текстов рот, сих повстречался рукопись залетают она моей предложения, проектах власти запятой переписывается возвращайся?
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. По всей ipsum диких
+                все, своего ему текстов рот, сих повстречался рукопись залетают она моей предложения, проектах власти
+                запятой переписывается возвращайся?
               </p>
             </div>
           </div>
@@ -227,9 +239,9 @@
             <img class="soloist__img" src="img/soloist.jpg" alt="soloist img">
           </div>
           <div class="soloist__content">
-           
-              <h2 class="soloist__subtitle subtitle">Наш солист</h2>
-          
+
+            <h2 class="soloist__subtitle subtitle">Наш солист</h2>
+
             <h3 class="soloist__name">Сергей Петров</h3>
             <p class="soloist__position">
               Певец - гитарист - автор песен
@@ -295,7 +307,7 @@
     </section>
 
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <div class="services__title title-box">
           <img class="title-box__img" src="img/title-bg.png" alt="title img">
@@ -335,7 +347,7 @@
       </div>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
         <div class="team__title title-box">
           <img class="title-box__img" src="img/title-bg.png" alt="title img">
@@ -378,11 +390,11 @@
     </section>
 
 
-    <section class="albums">
+    <section class="albums" id="albums">
       <div class="container">
         <div class="albums__title title-box">
           <img class="title-box__img" src="img/title-bg.png" alt="title img">
-          <h2 class="title-box__title">Наши альбомы</h2>
+          <h2 class="title-box__title">Концерты</h2>
           <p class="title-box__text">
             Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Подзаголовок своего
             однажды текста лучше рот то взгляд текст решила?
@@ -392,42 +404,42 @@
 
           <div class="albums__item">
             <a class="albums__link" href="#">
-              <span class="albums__link-text">Просмотреть</span>
+              <span class="albums__link-text">Подробнее</span>
               <img class="albums__img" src="img/album-3.jpg" alt="album img">
             </a>
           </div>
 
           <div class="albums__item">
             <a class="albums__link" href="#">
-              <span class="albums__link-text">Просмотреть</span>
+              <span class="albums__link-text">Подробнее</span>
               <img class="albums__img" src="img/album-1.jpg" alt="album img">
             </a>
           </div>
 
           <div class="albums__item">
             <a class="albums__link" href="#">
-               <span class="albums__link-text">Просмотреть</span>
+              <span class="albums__link-text">Подробнее</span>
               <img class="albums__img" src="img/album-2.jpg" alt="album img">
             </a>
           </div>
 
           <div class="albums__item">
             <a class="albums__link" href="#">
-               <span class="albums__link-text">Просмотреть</span>
+              <span class="albums__link-text">Подробнее</span>
               <img class="albums__img" src="img/album-4.jpg" alt="album img">
             </a>
           </div>
 
           <div class="albums__item">
             <a class="albums__link" href="#">
-               <span class="albums__link-text">Просмотреть</span>
+              <span class="albums__link-text">Подробнее</span>
               <img class="albums__img" src="img/album-5.jpg" alt="album img">
             </a>
           </div>
 
           <div class="albums__item">
             <a class="albums__link" href="#">
-               <span class="albums__link-text">Просмотреть</span>
+              <span class="albums__link-text">Подробнее</span>
               <img class="albums__img" src="img/album-6.jpg" alt="album img">
             </a>
           </div>
@@ -437,7 +449,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
         <div class="contacts__title title-box">
           <img class="title-box__img" src="img/title-bg.png" alt="title img">
@@ -484,7 +496,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <a class="footer__logo logo" href="#">
+        <a class="footer__logo logo" href="#body">
           <img class="footer__logo-img logo-img" src="img/logo.png" alt="logo img">
         </a>
         <ul class="social">
@@ -530,7 +542,7 @@
           </li>
         </ul>
         <div class="footer__copy">
-          <p class="footer__text">© Все права не защищены</p>
+          <p class="footer__text">© Все права защищены</p>
           <p class="footer__text">Автор сайта: Кадыко Виктор.</p>
         </div>
       </div>
