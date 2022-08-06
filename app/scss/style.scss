@@ -52,6 +52,7 @@
 
   &__social {
     margin-bottom: 40px;
+    margin-top: 30px;
     /*  margin-top: auto; */
   }
 
@@ -86,7 +87,7 @@
 
     &--active {
       display: block;
- 
+      right: 50px;
 
       .header-top__bars-img {
         opacity: 1;

@@ -427,3 +427,14 @@ background-color: $bg;
     bottom: -50px;
   }
 }
+
+
+
+
+
+
+@media(max-height:650px) {
+  .header__title{
+    margin-top: auto;
+  }
+}
