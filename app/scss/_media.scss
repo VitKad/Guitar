@@ -264,6 +264,11 @@ background-color: $bg;
   .services__img {
     max-width: 100%;
   }
+
+  .services__item {
+
+    border-bottom: none;
+}
 }
 
 
@@ -384,7 +389,7 @@ background-color: $bg;
   }
 
   .title-box {
-
+    font-size: 18px;
     min-height: auto;
 
   }
@@ -395,11 +400,12 @@ background-color: $bg;
 
   .soloist__social-title {
     margin-bottom: 10px;
+    margin-right: 0;
   }
 
   .title-box__text{
     text-transform:none;
-   
+    bottom: -20px;
   }
 
   .albums__link-text{
@@ -409,6 +415,11 @@ background-color: $bg;
 
 
 
+@media(max-width:450px) {
+  .title-box__text {
+    bottom: -33px;
+}
+}
 
 
 
@@ -426,6 +437,21 @@ background-color: $bg;
   
     bottom: -50px;
   }
+
+  body {
+    font-size: 18px;
+  }
+}
+
+
+@media(max-width:350px) {
+ 
+  .title-box__text{
+  
+    bottom: -55px;
+  }
+
+ 
 }
 
 
