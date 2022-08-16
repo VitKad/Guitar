@@ -98,14 +98,14 @@
 
 .contacts__img-box{
 background-color: $bg;
-  max-width: 280px;
+  max-width: 100%;
 
 
 }
 
 .contacts__img{
 
-
+margin: 0 auto;
  height: 100%;
  max-width: 250px;
  width: 100%;
@@ -232,6 +232,24 @@ background-color: $bg;
 
 
 @media(max-width:900px) {
+  .animated {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+
   section {
     padding: 45px 0;
   }
@@ -283,10 +301,6 @@ background-color: $bg;
     margin-bottom: 35px;
   }
 
-  .header-top .logo-img {
-    height: 65px;
-    max-width: 68px;
-  }
 
   .about__img {
     max-width: 100%;
@@ -306,6 +320,10 @@ background-color: $bg;
 
   .header-top__bars-btn--active {
     right: 25px;
+  }
+
+  .header-top__bars-btn {
+    top: 15px;
   }
 
   .menu--active {

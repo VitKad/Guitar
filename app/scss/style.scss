@@ -30,7 +30,7 @@
   &__title {
     font-weight: 600;
     font-size: 50px;
-    line-height: 36px;
+    line-height: 46px;
     margin-top: 20%;
     margin-bottom: 50px;
 
@@ -69,6 +69,7 @@
   &__bars-btn {
     position: fixed;
     right: -35px;
+    top: 40px;
     z-index: 11;
     transition: all 1s;
     background-color: $bg-gray;
@@ -98,8 +99,8 @@
   }
 
   .logo-img{
-    height: 105px;
-    max-width: 109px;
+    height: 53px;
+    max-width: 55px;
   }
 
   &__bars-img {
@@ -334,7 +335,6 @@
 
 .soloist {
   background-color: $bg-gray;
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -623,7 +623,7 @@
   &__img {
     max-width: 290px;
     width: 100%;
-    height: auto;
+    height: 380px;
     object-fit: cover;
   }
 
@@ -741,8 +741,8 @@
   }
 
   &__logo-img {
-    width: 54px;
-    height: 52px;
+    width: 55px;
+    height: 53px;
   }
 
   &__copy {
